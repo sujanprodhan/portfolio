@@ -1,0 +1,7 @@
+# Replace yourdomain.com with your real domain (or
+# yourhandle.github.io if you stay on the default GitHub Pages URL).
+
+User-agent: *
+Allow: /
+
+Sitemap: https://yourdomain.com/sitemap.xml

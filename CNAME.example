@@ -1,0 +1,16 @@
+yourdomain.com
+
+# ── How to use a custom domain ──────────────────────────────────────────
+# 1. Rename this file to exactly  CNAME  (no extension) and put your
+#    apex or subdomain on the first line, nothing else.
+# 2. At your DNS provider add either:
+#      • Apex domain (yourdomain.com) → four A records pointing to
+#        185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+#      • Subdomain (www.yourdomain.com) → CNAME to yourhandle.github.io
+# 3. Repo → Settings → Pages → Custom domain → enter the same domain,
+#    then tick "Enforce HTTPS" once the certificate is issued.
+# 4. Update the domain in index.html (canonical + Open Graph),
+#    robots.txt and sitemap.xml.
+#
+# Delete these comment lines from the real CNAME file — GitHub expects
+# the domain alone.

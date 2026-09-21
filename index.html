@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     EDIT ME  ▸  Replace every "YOUR NAME", "yourdomain.com",
+     "yourhandle" and the placeholder copy below with your own.
+     Search the file for  EDIT ME  to find each spot.
+     ═══════════════════════════════════════════════════════════ -->
+
+<title>YOUR NAME — Senior Software Engineer</title>
+<meta name="description" content="Senior software engineer with 14 years building reliable, high-scale systems. Backend architecture, cloud platforms and engineering leadership.">
+<meta name="author" content="YOUR NAME">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://yourdomain.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YOUR NAME">
+<meta property="og:title" content="YOUR NAME — Senior Software Engineer">
+<meta property="og:description" content="14 years of building reliable, high-scale software. Backend architecture, cloud platforms and engineering leadership.">
+<meta property="og:url" content="https://yourdomain.com/">
+<meta property="og:image" content="https://yourdomain.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@yourhandle">
+<meta name="twitter:creator" content="@yourhandle">
+<meta name="twitter:title" content="YOUR NAME — Senior Software Engineer">
+<meta name="twitter:description" content="14 years of building reliable, high-scale software.">
+<meta name="twitter:image" content="https://yourdomain.com/assets/img/og-image.png">
+
+<meta name="theme-color" content="#05070E" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F5F7FC" media="(prefers-color-scheme: light)">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Runs before paint: enables scroll-reveal only when JS is available and
+     restores the saved theme so there is no flash of the wrong palette. -->
+<script>
+  (function () {
+    var r = document.documentElement;
+    r.classList.add('js');
+    try {
+      var t = localStorage.getItem('portfolio-theme');
+      // Dark is the house style; light is opt-in via the toggle.
+      // To follow the visitor's OS instead, replace the line below with:
+      // if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      if (t !== 'light' && t !== 'dark') t = 'dark';
+      r.setAttribute('data-theme', t);
+    } catch (e) { /* storage blocked — keep the dark default */ }
+  })();
+</script>
+
+<!-- JSON-LD: Person schema for rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "YOUR NAME",
+  "url": "https://yourdomain.com/",
+  "image": "https://yourdomain.com/assets/img/og-image.png",
+  "jobTitle": "Senior Software Engineer",
+  "description": "Senior software engineer with 14 years of experience in distributed systems, cloud architecture and team leadership.",
+  "email": "mailto:you@yourdomain.com",
+  "knowsAbout": ["Software Architecture","Distributed Systems","Cloud Infrastructure","API Design","DevOps","Team Leadership"],
+  "sameAs": [
+    "https://github.com/yourhandle",
+    "https://www.linkedin.com/in/yourhandle",
+    "https://x.com/yourhandle"
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Ambient background -->
+<div class="aurora" aria-hidden="true">
+  <span class="aurora__blob aurora__blob--1"></span>
+  <span class="aurora__blob aurora__blob--2"></span>
+  <span class="aurora__blob aurora__blob--3"></span>
+  <span class="aurora__grid"></span>
+</div>
+
+<div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+<!-- ══════════════════ HEADER / NAV ══════════════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="shell nav">
+    <a class="brand" href="#home" aria-label="Home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="32" height="32" role="presentation">
+          <defs>
+            <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#6366F1"/>
+            </linearGradient>
+          </defs>
+          <rect x="1" y="1" width="30" height="30" rx="9" fill="none" stroke="url(#bg1)" stroke-width="1.6"/>
+          <path d="M12 10 L7.5 16 L12 22" fill="none" stroke="url(#bg1)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 10 L24.5 16 L20 22" fill="none" stroke="url(#bg1)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17.5 8.5 L14.5 23.5" fill="none" stroke="url(#bg1)" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand__text">YOUR<span>NAME</span></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="nav__link is-active">Home</a>
+      <a href="#about" class="nav__link">About Me</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#portfolio" class="nav__link">Portfolio</a>
+      <a href="#blog" class="nav__link">Articles</a>
+      <a href="#contact" class="nav__link">Contact Me</a>
+      <span class="nav__pill" id="navPill" aria-hidden="true"></span>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+      <a class="btn btn--ghost btn--sm nav__cta" href="#contact">Let's talk</a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-scrim" id="navScrim" hidden></div>
+
+<main id="main">
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero section" id="home">
+  <div class="shell hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow reveal"><span class="pulse-dot"></span> Available for select projects &amp; advisory</p>
+
+      <h1 class="hero__title reveal">
+        Engineering software that<br>
+        <span class="grad">survives real traffic.</span>
+      </h1>
+
+      <p class="hero__lede reveal">
+        I'm <strong>YOUR NAME</strong> — a senior software engineer with <strong>14 years</strong> of shipping
+        production systems: distributed backends, cloud platforms and the teams that keep them alive at 3 a.m.
+        I care about clean boundaries, measurable performance and code that the next engineer can read.
+      </p>
+
+      <div class="hero__actions reveal">
+        <a class="btn btn--primary" href="#portfolio">
+          View my work
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M4 10h11m-4.5-4.5L15 10l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <!-- EDIT ME ▸ drop your PDF at assets/files/resume.pdf -->
+        <a class="btn btn--outline" href="assets/files/resume.pdf" download>
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 3v9m0 0 3.5-3.5M10 12 6.5 8.5M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download CV
+        </a>
+      </div>
+
+      <dl class="stats reveal">
+        <div class="stat">
+          <dt>Years shipping</dt>
+          <dd><span class="count" data-count="14">0</span></dd>
+        </div>
+        <div class="stat">
+          <dt>Projects delivered</dt>
+          <dd><span class="count" data-count="60">0</span><span class="stat__suffix">+</span></dd>
+        </div>
+        <div class="stat">
+          <dt>Engineers mentored</dt>
+          <dd><span class="count" data-count="25">0</span><span class="stat__suffix">+</span></dd>
+        </div>
+        <div class="stat">
+          <dt>Uptime held</dt>
+          <dd><span class="count" data-count="99" data-decimals="2" data-decimal-value="99.95">0</span><span class="stat__suffix">%</span></dd>
+        </div>
+      </dl>
+    </div>
+
+    <aside class="hero__visual reveal" aria-label="Profile card">
+      <div class="code-card">
+        <div class="code-card__bar">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="code-card__file">engineer.ts</span>
+        </div>
+        <pre class="code-card__body"><code><span class="c-key">export const</span> <span class="c-fn">engineer</span> = {
+  name<span class="c-op">:</span> <span class="c-str">'YOUR NAME'</span>,
+  role<span class="c-op">:</span> <span class="c-str">'Senior Software Engineer'</span>,
+  experience<span class="c-op">:</span> <span class="c-num">14</span>, <span class="c-cm">// years</span>
+  stack<span class="c-op">:</span> [<span class="c-str">'TypeScript'</span>, <span class="c-str">'Go'</span>, <span class="c-str">'PHP'</span>, <span class="c-str">'Python'</span>],
+  cloud<span class="c-op">:</span> [<span class="c-str">'AWS'</span>, <span class="c-str">'Docker'</span>, <span class="c-str">'Kubernetes'</span>],
+  focus<span class="c-op">:</span> <span class="c-str">'scalable, observable systems'</span>,
+  openTo<span class="c-op">:</span> <span class="c-key">true</span>,
+}</code></pre>
+      </div>
+
+      <div class="float-chip float-chip--a"><span class="float-chip__k">Avg. API p95</span><span class="float-chip__v">82&nbsp;ms</span></div>
+      <div class="float-chip float-chip--b"><span class="float-chip__k">Deploys / week</span><span class="float-chip__v">30+</span></div>
+    </aside>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>TypeScript</span><span>·</span><span>Node.js</span><span>·</span><span>Go</span><span>·</span><span>PHP / Laravel</span><span>·</span><span>Python</span><span>·</span><span>React</span><span>·</span><span>PostgreSQL</span><span>·</span><span>MySQL</span><span>·</span><span>Redis</span><span>·</span><span>Kafka</span><span>·</span><span>AWS</span><span>·</span><span>Kubernetes</span><span>·</span><span>Terraform</span><span>·</span>
+      <span>TypeScript</span><span>·</span><span>Node.js</span><span>·</span><span>Go</span><span>·</span><span>PHP / Laravel</span><span>·</span><span>Python</span><span>·</span><span>React</span><span>·</span><span>PostgreSQL</span><span>·</span><span>MySQL</span><span>·</span><span>Redis</span><span>·</span><span>Kafka</span><span>·</span><span>AWS</span><span>·</span><span>Kubernetes</span><span>·</span><span>Terraform</span><span>·</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ ABOUT ══════════════════ -->
+<section class="section" id="about">
+  <div class="shell">
+    <header class="section__head reveal">
+      <p class="eyebrow">01 — About Me</p>
+      <h2 class="section__title">Fourteen years of turning<br><span class="grad">requirements into systems.</span></h2>
+    </header>
+
+    <div class="about__grid">
+      <div class="about__portrait reveal">
+        <!-- EDIT ME ▸ swap in your photo: assets/img/profile.jpg (square, 800×800) -->
+        <div class="portrait">
+          <img src="assets/img/profile.jpg" alt="Portrait of YOUR NAME" width="800" height="800" loading="lazy"
+               onerror="this.style.display='none';this.parentElement.classList.add('portrait--empty')">
+          <div class="portrait__fallback" aria-hidden="true">
+            <span>Add your photo at<br><code>assets/img/profile.jpg</code></span>
+          </div>
+          <span class="portrait__ring" aria-hidden="true"></span>
+        </div>
+        <ul class="about__facts">
+          <li><span>Based in</span><strong>Dhaka, Bangladesh</strong></li>
+          <li><span>Experience</span><strong>14 years</strong></li>
+          <li><span>Focus</span><strong>Backend &amp; Cloud</strong></li>
+          <li><span>Languages</span><strong>English, Bangla</strong></li>
+        </ul>
+      </div>
+
+      <div class="about__body reveal">
+        <p class="lede">
+          I build the unglamorous parts that decide whether a product survives its own success:
+          data models, service boundaries, queues, caches, and the observability that tells you
+          the truth before your users do.
+        </p>
+        <p>
+          My work spans high-traffic e-commerce, healthcare platforms and internal tooling. I've led
+          migrations from monoliths to services (and argued against a few that weren't worth it),
+          cut infrastructure bills by rewriting the hot path instead of adding servers, and set up
+          CI/CD pipelines that made weekly releases boring — which is the goal.
+        </p>
+        <p>
+          Outside delivery, I mentor mid-level engineers, run code-review standards, and write about
+          architecture trade-offs. I'd rather ship the simple version this month than the perfect
+          version next year.
+        </p>
+
+        <ul class="value-list">
+          <li>
+            <span class="value-list__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 3 4.5 6.5v5c0 4.4 3.1 8.2 7.5 9.5 4.4-1.3 7.5-5.1 7.5-9.5v-5L12 3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2.2 2.2L15.5 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div><h3>Reliability first</h3><p>SLOs, graceful degradation and error budgets — not heroics.</p></div>
+          </li>
+          <li>
+            <span class="value-list__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 18V9m5 9V5m5 13v-6m5 6V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <div><h3>Measured, not guessed</h3><p>Profilers and traces decide the optimisation, not opinions.</p></div>
+          </li>
+          <li>
+            <span class="value-list__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 17H6a3 3 0 0 1 0-6h1.2M15 7h3a3 3 0 0 1 0 6h-1.2M8.5 12h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <div><h3>Clean interfaces</h3><p>Contracts and boundaries that let teams move without collisions.</p></div>
+          </li>
+          <li>
+            <span class="value-list__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c1.4-2.7 4-4 7-4s5.6 1.3 7 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </span>
+            <div><h3>People scale too</h3><p>Documentation, review culture and mentoring as part of delivery.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ SKILLS ══════════════════ -->
+<section class="section section--alt" id="skills">
+  <div class="shell">
+    <header class="section__head reveal">
+      <p class="eyebrow">02 — Capabilities</p>
+      <h2 class="section__title">The toolkit, and how deep<br><span class="grad">each tool actually goes.</span></h2>
+    </header>
+
+    <div class="skills__grid">
+      <article class="card skill-card reveal">
+        <h3 class="card__title"><span class="card__badge">BE</span> Backend &amp; APIs</h3>
+        <p class="card__text">Service design, domain modelling, REST &amp; GraphQL, event-driven workflows, background processing.</p>
+        <ul class="bars">
+          <li><span>Node.js / TypeScript</span><span class="bar"><i data-level="95"></i></span></li>
+          <li><span>PHP / Laravel</span><span class="bar"><i data-level="90"></i></span></li>
+          <li><span>Go</span><span class="bar"><i data-level="78"></i></span></li>
+          <li><span>Python</span><span class="bar"><i data-level="75"></i></span></li>
+        </ul>
+      </article>
+
+      <article class="card skill-card reveal">
+        <h3 class="card__title"><span class="card__badge">IN</span> Infrastructure</h3>
+        <p class="card__text">Containerisation, orchestration, infrastructure as code, blue-green releases and cost tuning.</p>
+        <ul class="bars">
+          <li><span>AWS</span><span class="bar"><i data-level="88"></i></span></li>
+          <li><span>Docker</span><span class="bar"><i data-level="92"></i></span></li>
+          <li><span>Kubernetes</span><span class="bar"><i data-level="80"></i></span></li>
+          <li><span>Terraform / CI-CD</span><span class="bar"><i data-level="85"></i></span></li>
+        </ul>
+      </article>
+
+      <article class="card skill-card reveal">
+        <h3 class="card__title"><span class="card__badge">DB</span> Data</h3>
+        <p class="card__text">Schema design, query tuning, replication, caching layers, streaming and analytics pipelines.</p>
+        <ul class="bars">
+          <li><span>PostgreSQL / MySQL</span><span class="bar"><i data-level="93"></i></span></li>
+          <li><span>Redis</span><span class="bar"><i data-level="86"></i></span></li>
+          <li><span>Kafka / Queues</span><span class="bar"><i data-level="78"></i></span></li>
+          <li><span>Elasticsearch</span><span class="bar"><i data-level="72"></i></span></li>
+        </ul>
+      </article>
+
+      <article class="card skill-card reveal">
+        <h3 class="card__title"><span class="card__badge">FE</span> Frontend</h3>
+        <p class="card__text">Component architecture, accessibility, Core Web Vitals and design-system implementation.</p>
+        <ul class="bars">
+          <li><span>React / Next.js</span><span class="bar"><i data-level="84"></i></span></li>
+          <li><span>HTML5 / CSS3</span><span class="bar"><i data-level="95"></i></span></li>
+          <li><span>Vue</span><span class="bar"><i data-level="70"></i></span></li>
+          <li><span>Performance &amp; a11y</span><span class="bar"><i data-level="88"></i></span></li>
+        </ul>
+      </article>
+    </div>
+
+    <ul class="chips reveal" aria-label="Other tools and practices">
+      <li>System Design</li><li>Microservices</li><li>Event Sourcing</li><li>gRPC</li><li>OpenAPI</li>
+      <li>Observability</li><li>Grafana</li><li>Prometheus</li><li>GitHub Actions</li><li>Jenkins</li>
+      <li>Testing &amp; TDD</li><li>Code Review</li><li>Agile / Scrum</li><li>Technical Writing</li><li>Mentoring</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════ EXPERIENCE TIMELINE ══════════════════ -->
+<section class="section" id="experience">
+  <div class="shell">
+    <header class="section__head reveal">
+      <p class="eyebrow">03 — Career</p>
+      <h2 class="section__title">Fourteen years,<br><span class="grad">in order.</span></h2>
+      <p class="section__lede">The timeline runs newest first. Each entry lists the scope I owned and the outcome it produced.</p>
+    </header>
+
+    <ol class="timeline">
+      <li class="timeline__item reveal">
+        <span class="timeline__node" aria-hidden="true"></span>
+        <p class="timeline__date">2021 — Present</p>
+        <h3 class="timeline__role">Principal / Lead Software Engineer</h3>
+        <p class="timeline__org">Company Name · Dhaka</p>
+        <p class="timeline__text">Own platform architecture for a multi-tenant product serving millions of monthly requests. Led the service extraction from a 400k-line monolith, introduced contract testing, and brought p95 latency down from 640&nbsp;ms to 82&nbsp;ms.</p>
+        <ul class="tags"><li>Architecture</li><li>Kubernetes</li><li>Go</li><li>Team of 9</li></ul>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__node" aria-hidden="true"></span>
+        <p class="timeline__date">2017 — 2021</p>
+        <h3 class="timeline__role">Senior Software Engineer</h3>
+        <p class="timeline__org">Company Name · Remote</p>
+        <p class="timeline__text">Built the order, payment and fulfilment services for a high-growth commerce platform. Designed the idempotent payment pipeline that survived a 12× flash-sale spike without a single double charge.</p>
+        <ul class="tags"><li>Node.js</li><li>PostgreSQL</li><li>AWS</li><li>Payments</li></ul>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__node" aria-hidden="true"></span>
+        <p class="timeline__date">2014 — 2017</p>
+        <h3 class="timeline__role">Software Engineer</h3>
+        <p class="timeline__org">Company Name · Dhaka</p>
+        <p class="timeline__text">Delivered customer-facing web applications end to end. Introduced automated testing and a CI pipeline that cut release time from a full day to under twenty minutes.</p>
+        <ul class="tags"><li>PHP / Laravel</li><li>MySQL</li><li>CI/CD</li></ul>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__node" aria-hidden="true"></span>
+        <p class="timeline__date">2012 — 2014</p>
+        <h3 class="timeline__role">Junior Software Engineer</h3>
+        <p class="timeline__org">Company Name · Dhaka</p>
+        <p class="timeline__text">Started on maintenance and bug-fix rotations, moved into feature ownership. Learned the habit that still shapes my work: read the logs before you read the ticket.</p>
+        <ul class="tags"><li>JavaScript</li><li>jQuery</li><li>REST</li></ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ══════════════════ PORTFOLIO ══════════════════ -->
+<section class="section section--alt" id="portfolio">
+  <div class="shell">
+    <header class="section__head reveal">
+      <p class="eyebrow">04 — Portfolio</p>
+      <h2 class="section__title">Selected work<br><span class="grad">and what it had to survive.</span></h2>
+      <p class="section__lede">Filter by discipline. Each card links to a live site or repository — swap the URLs for your own.</p>
+    </header>
+
+    <div class="filters reveal" role="tablist" aria-label="Filter projects">
+      <button class="filter is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+      <button class="filter" role="tab" aria-selected="false" data-filter="web">Web Apps</button>
+      <button class="filter" role="tab" aria-selected="false" data-filter="api">APIs &amp; Backend</button>
+      <button class="filter" role="tab" aria-selected="false" data-filter="cloud">Cloud / DevOps</button>
+      <button class="filter" role="tab" aria-selected="false" data-filter="oss">Open Source</button>
+    </div>
+
+    <div class="projects" id="projects">
+
+      <article class="project reveal" data-cat="web api">
+        <div class="project__thumb" data-label="01">
+          <svg viewBox="0 0 400 240" role="img" aria-label="Abstract commerce dashboard illustration" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#6366F1"/></linearGradient></defs>
+            <rect width="400" height="240" fill="#0A1024"/>
+            <g opacity=".9">
+              <rect x="28" y="34" width="150" height="10" rx="5" fill="url(#pg1)"/>
+              <rect x="28" y="56" width="96" height="8" rx="4" fill="#1E293B"/>
+              <rect x="28" y="92" width="110" height="74" rx="10" fill="#111C36" stroke="#1E2A4A"/>
+              <rect x="150" y="92" width="110" height="74" rx="10" fill="#111C36" stroke="#1E2A4A"/>
+              <rect x="272" y="92" width="100" height="74" rx="10" fill="#111C36" stroke="#1E2A4A"/>
+              <path d="M40 150 L66 126 L92 138 L118 104" fill="none" stroke="url(#pg1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="205" cy="129" r="22" fill="none" stroke="url(#pg1)" stroke-width="5" stroke-dasharray="90 50"/>
+              <rect x="288" y="140" width="14" height="18" rx="3" fill="url(#pg1)"/><rect x="310" y="126" width="14" height="32" rx="3" fill="#334155"/><rect x="332" y="114" width="14" height="44" rx="3" fill="url(#pg1)"/>
+              <rect x="28" y="188" width="344" height="8" rx="4" fill="#16203A"/>
+              <rect x="28" y="188" width="210" height="8" rx="4" fill="url(#pg1)"/>
+            </g>
+          </svg>
+        </div>
+        <div class="project__body">
+          <p class="project__cat">Commerce Platform</p>
+          <h3 class="project__title">Multi-tenant Order Engine</h3>
+          <p class="project__text">Order, inventory and payment services for a marketplace handling 40k orders a day. Idempotent writes, saga-based refunds, zero-downtime schema migrations.</p>
+          <ul class="tags"><li>Node.js</li><li>PostgreSQL</li><li>Kafka</li><li>AWS</li></ul>
+          <div class="project__links">
+            <a href="#" class="link-arrow">Live site<svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="#" class="link-arrow">Case study<svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal" data-cat="cloud api">
+        <div class="project__thumb" data-label="02">
+          <svg viewBox="0 0 400 240" role="img" aria-label="Abstract cloud pipeline illustration" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="pg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22D3EE"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient></defs>
+            <rect width="400" height="240" fill="#081226"/>
+            <g fill="none" stroke="#1E2A4A" stroke-width="1"><path d="M0 60h400M0 120h400M0 180h400M100 0v240M200 0v240M300 0v240"/></g>
+            <g>
+              <rect x="34" y="96" width="76" height="48" rx="10" fill="#101B33" stroke="url(#pg2)" stroke-width="1.6"/>
+              <rect x="162" y="60" width="76" height="48" rx="10" fill="#101B33" stroke="url(#pg2)" stroke-width="1.6"/>
+              <rect x="162" y="132" width="76" height="48" rx="10" fill="#101B33" stroke="url(#pg2)" stroke-width="1.6"/>
+              <rect x="290" y="96" width="76" height="48" rx="10" fill="#101B33" stroke="url(#pg2)" stroke-width="1.6"/>
+              <path d="M110 120 h30 M140 120 V84 h22 M140 120 v36 h22 M238 84 h30 v36 h22 M238 156 h30 v-36" stroke="url(#pg2)" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="72" cy="120" r="6" fill="url(#pg2)"/><circle cx="200" cy="84" r="6" fill="url(#pg2)"/><circle cx="200" cy="156" r="6" fill="url(#pg2)"/><circle cx="328" cy="120" r="6" fill="url(#pg2)"/>
+            </g>
+          </svg>
+        </div>
+        <div class="project__body">
+          <p class="project__cat">Platform Engineering</p>
+          <h3 class="project__title">Zero-Downtime Deploy Pipeline</h3>
+          <p class="project__text">Terraform + GitHub Actions pipeline with canary releases and automatic rollback on SLO breach. Release frequency went from fortnightly to thirty deploys a week.</p>
+          <ul class="tags"><li>Terraform</li><li>Kubernetes</li><li>GitHub Actions</li><li>Prometheus</li></ul>
+          <div class="project__links">
+            <a href="#" class="link-arrow">Repository<svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal" data-cat="web">
+        <div class="project__thumb" data-label="03">
+          <svg viewBox="0 0 400 240" role="img" aria-label="Abstract healthcare app illustration" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="pg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#34D399"/><stop offset="100%" stop-color="#38BDF8"/></linearGradient></defs>
+            <rect width="400" height="240" fill="#071A22"/>
+            <rect x="140" y="26" width="120" height="188" rx="18" fill="#0C2330" stroke="url(#pg3)" stroke-width="1.6"/>
+            <rect x="160" y="46" width="80" height="8" rx="4" fill="url(#pg3)"/>
+            <rect x="160" y="66" width="56" height="6" rx="3" fill="#1C3B49"/>
+            <rect x="160" y="88" width="80" height="34" rx="8" fill="#12303E"/>
+            <rect x="160" y="130" width="80" height="34" rx="8" fill="#12303E"/>
+            <path d="M172 105h14m-7-7v14" stroke="url(#pg3)" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M168 147h56" stroke="#1C3B49" stroke-width="3" stroke-linecap="round"/>
+            <path d="M160 180h80" stroke="url(#pg3)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M40 120c0-18 26-18 26 0 0 14-26 30-26 30s-26-16-26-30c0-18 26-18 26 0Z" transform="translate(30,-10)" fill="none" stroke="url(#pg3)" stroke-width="2"/>
+            <path d="M300 96h56M300 116h40M300 136h48" stroke="#1C3B49" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="project__body">
+          <p class="project__cat">Healthcare</p>
+          <h3 class="project__title">Patient Booking &amp; Lab Portal</h3>
+          <p class="project__text">Appointment booking, home sample collection and report delivery. Bilingual UI, WCAG-AA contrast, and an offline-tolerant form flow for weak mobile networks.</p>
+          <ul class="tags"><li>React</li><li>Laravel</li><li>Redis</li><li>i18n</li></ul>
+          <div class="project__links">
+            <a href="#" class="link-arrow">Live site<svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal" data-cat="oss api">
+        <div class="project__thumb" data-label="04">
+          <svg viewBox="0 0 400 240" role="img" aria-label="Abstract open source library illustration" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="pg4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A78BFA"/><stop offset="100%" stop-color="#F472B6"/></linearGradient></defs>
+            <rect width="400" height="240" fill="#120F26"/>
+            <g stroke="url(#pg4)" stroke-width="1.8" fill="none">
+              <circle cx="200" cy="120" r="58"/><circle cx="200" cy="120" r="88" opacity=".45"/><circle cx="200" cy="120" r="26"/>
+            </g>
+            <circle cx="200" cy="32" r="8" fill="url(#pg4)"/><circle cx="288" cy="120" r="8" fill="url(#pg4)"/>
+            <circle cx="200" cy="208" r="8" fill="url(#pg4)"/><circle cx="112" cy="120" r="8" fill="url(#pg4)"/>
+            <path d="M188 112l-10 8 10 8M212 112l10 8-10 8" stroke="url(#pg4)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="project__body">
+          <p class="project__cat">Open Source</p>
+          <h3 class="project__title">Rate-Limit Middleware</h3>
+          <p class="project__text">A small, dependency-free sliding-window limiter with Redis and in-memory drivers. Used in production by a handful of teams; 100% branch coverage.</p>
+          <ul class="tags"><li>TypeScript</li><li>Redis</li><li>npm</li></ul>
+          <div class="project__links">
+            <a href="#" class="link-arrow">GitHub<svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="#" class="link-arrow">Docs<svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal" data-cat="cloud">
+        <div class="project__thumb" data-label="05">
+          <svg viewBox="0 0 400 240" role="img" aria-label="Abstract observability dashboard illustration" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="pg5" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#EF4444"/></linearGradient></defs>
+            <rect width="400" height="240" fill="#1A1206"/>
+            <path d="M20 180 L70 140 L110 156 L150 96 L196 124 L240 70 L288 104 L330 62 L380 88" fill="none" stroke="url(#pg5)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 180 L70 140 L110 156 L150 96 L196 124 L240 70 L288 104 L330 62 L380 88 L380 220 L20 220 Z" fill="url(#pg5)" opacity=".13"/>
+            <g stroke="#3A2A12" stroke-width="1"><path d="M20 60h360M20 100h360M20 140h360M20 180h360"/></g>
+            <circle cx="330" cy="62" r="6" fill="url(#pg5)"/>
+            <rect x="20" y="28" width="90" height="8" rx="4" fill="url(#pg5)"/>
+          </svg>
+        </div>
+        <div class="project__body">
+          <p class="project__cat">Observability</p>
+          <h3 class="project__title">SLO &amp; Alerting Framework</h3>
+          <p class="project__text">Service-level objectives, burn-rate alerts and on-call runbooks across 20+ services. Cut pager noise by 70% while catching real incidents earlier.</p>
+          <ul class="tags"><li>Prometheus</li><li>Grafana</li><li>OpenTelemetry</li></ul>
+          <div class="project__links">
+            <a href="#" class="link-arrow">Write-up<svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal" data-cat="web oss">
+        <div class="project__thumb" data-label="06">
+          <svg viewBox="0 0 400 240" role="img" aria-label="Abstract design system illustration" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="pg6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#818CF8"/></linearGradient></defs>
+            <rect width="400" height="240" fill="#0A1024"/>
+            <rect x="30" y="34" width="150" height="72" rx="12" fill="#111C36" stroke="url(#pg6)" stroke-width="1.4"/>
+            <rect x="196" y="34" width="72" height="72" rx="36" fill="#111C36" stroke="url(#pg6)" stroke-width="1.4"/>
+            <rect x="284" y="34" width="86" height="72" rx="12" fill="url(#pg6)" opacity=".25"/>
+            <rect x="30" y="126" width="86" height="80" rx="12" fill="#111C36" stroke="#22304F"/>
+            <rect x="132" y="126" width="118" height="36" rx="10" fill="url(#pg6)"/>
+            <rect x="132" y="172" width="118" height="34" rx="10" fill="#111C36" stroke="#22304F"/>
+            <rect x="266" y="126" width="104" height="80" rx="12" fill="#111C36" stroke="#22304F"/>
+            <path d="M286 186h64M286 168h44M286 150h54" stroke="#22304F" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="project__body">
+          <p class="project__cat">Design System</p>
+          <h3 class="project__title">Component Library &amp; Tokens</h3>
+          <p class="project__text">A themeable component library with accessible primitives, visual regression tests and versioned design tokens shared by web and mobile.</p>
+          <ul class="tags"><li>React</li><li>CSS3</li><li>Storybook</li><li>a11y</li></ul>
+          <div class="project__links">
+            <a href="#" class="link-arrow">Storybook<svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="projects__empty" id="projectsEmpty" hidden>No projects in this category yet.</p>
+  </div>
+</section>
+
+<!-- ══════════════════ BLOG / ARTICLES ══════════════════ -->
+<section class="section" id="blog">
+  <div class="shell">
+    <header class="section__head reveal">
+      <p class="eyebrow">05 — Articles</p>
+      <h2 class="section__title">Notes from<br><span class="grad">production.</span></h2>
+      <p class="section__lede">Trade-offs, post-mortems and the occasional strong opinion. Point each card at your own post URL.</p>
+    </header>
+
+    <div class="posts">
+      <article class="post reveal">
+        <a class="post__link" href="#" aria-label="Read: Why your monolith is probably fine">
+          <p class="post__meta"><time datetime="2026-08-14">14 Aug 2026</time><span aria-hidden="true">·</span><span>7 min read</span></p>
+          <h3 class="post__title">Why your monolith is probably fine</h3>
+          <p class="post__text">Splitting services solves organisational problems, not performance ones. A checklist for telling the two apart before you commit a year to a migration.</p>
+          <ul class="tags"><li>Architecture</li><li>Microservices</li></ul>
+          <span class="post__cta">Read article
+            <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M4 10h11m-4.5-4.5L15 10l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </article>
+
+      <article class="post reveal">
+        <a class="post__link" href="#" aria-label="Read: The index you forgot to add">
+          <p class="post__meta"><time datetime="2026-06-02">2 Jun 2026</time><span aria-hidden="true">·</span><span>5 min read</span></p>
+          <h3 class="post__title">The index you forgot to add</h3>
+          <p class="post__text">A 640&nbsp;ms endpoint became 82&nbsp;ms without touching application code. A walk through the query plan, the fix, and how to spot the pattern earlier.</p>
+          <ul class="tags"><li>PostgreSQL</li><li>Performance</li></ul>
+          <span class="post__cta">Read article
+            <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M4 10h11m-4.5-4.5L15 10l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </article>
+
+      <article class="post reveal">
+        <a class="post__link" href="#" aria-label="Read: Idempotency keys, explained by a refund gone wrong">
+          <p class="post__meta"><time datetime="2026-03-19">19 Mar 2026</time><span aria-hidden="true">·</span><span>9 min read</span></p>
+          <h3 class="post__title">Idempotency, explained by a refund gone wrong</h3>
+          <p class="post__text">What a duplicate payment taught us about retries, at-least-once delivery, and designing writes you can safely repeat.</p>
+          <ul class="tags"><li>Payments</li><li>Reliability</li></ul>
+          <span class="post__cta">Read article
+            <svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M4 10h11m-4.5-4.5L15 10l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section class="section section--alt" id="contact">
+  <div class="shell">
+    <header class="section__head reveal">
+      <p class="eyebrow">06 — Contact Me</p>
+      <h2 class="section__title">Have something<br><span class="grad">worth building?</span></h2>
+      <p class="section__lede">Tell me the problem, the constraint and the deadline. I reply to every serious enquiry within two business days.</p>
+    </header>
+
+    <div class="contact__grid">
+      <aside class="contact__aside reveal">
+        <ul class="contact__list">
+          <li>
+            <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><span class="contact__k">Email</span><a class="contact__v" href="mailto:you@yourdomain.com">you@yourdomain.com</a></div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M7 3.8h3l1.6 4-2 1.4a12 12 0 0 0 5.2 5.2l1.4-2 4 1.6v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3.8 6 2 2 0 0 1 5.8 3.8Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+            <div><span class="contact__k">Phone</span><a class="contact__v" href="tel:+8801000000000">+880 1000 000000</a></div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></span>
+            <div><span class="contact__k">Location</span><span class="contact__v">Dhaka, Bangladesh · UTC+6</span></div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5.3l3.4 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+            <div><span class="contact__k">Response time</span><span class="contact__v">Within 48 hours</span></div>
+          </li>
+        </ul>
+
+        <div class="socials" aria-label="Social profiles">
+          <a href="https://github.com/yourhandle" class="social" aria-label="GitHub" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/yourhandle" class="social" aria-label="LinkedIn" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.2c0-1.24-.02-2.84-1.9-2.84-1.9 0-2.2 1.36-2.2 2.75V21h-4V9.5Z"/></svg>
+          </a>
+          <a href="https://x.com/yourhandle" class="social" aria-label="X" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.5 3h3.2l-7 8 8.2 10h-6.4l-5-6.1L4.7 21H1.5l7.5-8.6L1.2 3h6.6l4.5 5.6L17.5 3Zm-1.1 16h1.8L7.7 4.8H5.8L16.4 19Z"/></svg>
+          </a>
+          <a href="https://stackoverflow.com/users/000000" class="social" aria-label="Stack Overflow" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.3 20.1v-5h1.9V22H4.8v-6.9h1.9v5h10.6ZM8.6 14.5l8.2 1.7.4-1.9-8.2-1.7-.4 1.9Zm1.1-4 7.6 3.6.8-1.7-7.6-3.6-.8 1.7Zm2.1-3.8 6.4 5.4 1.2-1.5-6.4-5.4-1.2 1.5ZM16 2l-1.5 1.2 5 6.7L21 8.7 16 2ZM8.4 18.2h8.4v-1.9H8.4v1.9Z"/></svg>
+          </a>
+        </div>
+
+        <div class="availability">
+          <span class="pulse-dot"></span>
+          <p><strong>Currently accepting</strong> contract, advisory and fractional-lead engagements for Q4.</p>
+        </div>
+      </aside>
+
+      <div class="contact__form-wrap reveal">
+        <!--
+          ═══ EDIT ME ▸ MAKE THE FORM SEND EMAIL ═══════════════════
+          Open assets/js/main.js and set CONTACT_CONFIG at the top.
+
+          Option A — Formspree (recommended)
+            1. Sign up free at https://formspree.io
+            2. Create a form, copy the ID from the endpoint (e.g. xbjnqkla)
+            3. In main.js:  provider: 'formspree',  formspreeId: 'xbjnqkla'
+
+          Option B — Web3Forms (no account, unlimited free)
+            1. Get a key at https://web3forms.com  (emailed to you instantly)
+            2. In main.js:  provider: 'web3forms',  web3formsKey: 'your-key'
+
+          Option C — mailto fallback (zero setup)
+            1. In main.js:  provider: 'mailto',  email: 'you@yourdomain.com'
+
+          Until you configure one, the form runs in demo mode and simply
+          confirms on screen without sending.
+          ══════════════════════════════════════════════════════════
+        -->
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="cf-name">Your name <span aria-hidden="true">*</span></label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" placeholder="Jane Rahman" required minlength="2">
+              <p class="field__error" data-for="cf-name"></p>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email address <span aria-hidden="true">*</span></label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" placeholder="jane@company.com" required>
+              <p class="field__error" data-for="cf-email"></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="cf-company">Company <span class="opt">(optional)</span></label>
+              <input type="text" id="cf-company" name="company" autocomplete="organization" placeholder="Acme Ltd.">
+            </div>
+            <div class="field">
+              <label for="cf-budget">Budget range <span class="opt">(optional)</span></label>
+              <select id="cf-budget" name="budget">
+                <option value="">Prefer not to say</option>
+                <option>Under $5,000</option>
+                <option>$5,000 – $15,000</option>
+                <option>$15,000 – $50,000</option>
+                <option>$50,000+</option>
+                <option>Retainer / ongoing</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cf-subject">Subject <span aria-hidden="true">*</span></label>
+            <input type="text" id="cf-subject" name="subject" placeholder="Backend architecture review" required minlength="3">
+            <p class="field__error" data-for="cf-subject"></p>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="cf-message" name="message" rows="6" placeholder="What are you building, what's in the way, and when does it need to be live?" required minlength="20"></textarea>
+            <p class="field__hint"><span id="cf-count">0</span> / 20 characters minimum</p>
+            <p class="field__error" data-for="cf-message"></p>
+          </div>
+
+          <!-- Honeypot: hidden from people, catches bots -->
+          <div class="honeypot" aria-hidden="true">
+            <label for="cf-website">Leave this field empty</label>
+            <input type="text" id="cf-website" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field field--check">
+            <input type="checkbox" id="cf-consent" name="consent" required>
+            <label for="cf-consent">I agree to be contacted about this enquiry. <span aria-hidden="true">*</span></label>
+            <p class="field__error" data-for="cf-consent"></p>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit" id="cf-submit">
+            <span class="btn__label">Send message</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+            <svg class="btn__icon" viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M3 10.5 17 4l-5 13-2.4-5.1L3 10.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </button>
+
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="form__note">Prefer email? Write to <a href="mailto:you@yourdomain.com">you@yourdomain.com</a> directly.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="site-footer">
+  <div class="shell footer__grid">
+    <div class="footer__brand">
+      <a class="brand" href="#home">
+        <span class="brand__text">YOUR<span>NAME</span></span>
+      </a>
+      <p>Senior software engineer. Building systems that stay up, stay fast and stay readable.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <h2>Navigate</h2>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#blog">Articles</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+    <div class="footer__contact">
+      <h2>Get in touch</h2>
+      <a href="mailto:you@yourdomain.com">you@yourdomain.com</a>
+      <a href="tel:+8801000000000">+880 1000 000000</a>
+      <span>Dhaka, Bangladesh</span>
+    </div>
+  </div>
+  <div class="shell footer__bar">
+    <p>© <span id="year">2026</span> YOUR NAME. All rights reserved.</p>
+    <p class="footer__built">Hand-coded with HTML5, CSS3 &amp; vanilla JS · Hosted on GitHub Pages</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 16V5m-4.5 4.5L10 5l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
