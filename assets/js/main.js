@@ -1,5 +1,5 @@
 /* ==========================================================================
-   YOUR NAME — Portfolio · main.js
+   MD. SUJAN MIAH — Portfolio · main.js
    Vanilla JS. No dependencies, no build step.
    ========================================================================== */
 
@@ -271,7 +271,7 @@ const CONTACT_CONFIG = {
   }
 
   const RULES = {
-    'cf-name':    (v) => v.trim().length >= 2 || 'Please enter your name (at least 2 characters).',
+    'cf-name':    (v) => v.trim().length >= 2 || 'Please enter MD. SUJAN MIAH (at least 2 characters).',
     'cf-email':   (v) => /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(v.trim()) || 'Please enter a valid email address.',
     'cf-subject': (v) => v.trim().length >= 3 || 'Give your message a short subject.',
     'cf-message': (v) => v.trim().length >= 20 || 'Please write at least 20 characters so I can help properly.'

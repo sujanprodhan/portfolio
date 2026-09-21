@@ -1,4 +1,4 @@
-# Personal Portfolio — YOUR NAME
+# Personal Portfolio — MD. SUJAN MIAH
 
 A fast, fully responsive, single-page portfolio for a senior software engineer.
 Hand-written **HTML5 + CSS3 + vanilla JavaScript** — no frameworks, no build
@@ -67,11 +67,11 @@ marked. The short list:
 
 | File | What to change |
 |---|---|
-| `index.html` | `YOUR NAME`, job title, `yourdomain.com`, `yourhandle`, `you@yourdomain.com`, phone, location |
+| `index.html` | `MD. SUJAN MIAH`, job title, `yourdomain.com`, `yourhandle`, `you@yourdomain.com`, phone, location |
 | `index.html` → JSON-LD block | Same details, plus your real `sameAs` profile URLs |
 | `site.webmanifest` | Name and description |
 | `robots.txt`, `sitemap.xml` | Your domain |
-| `LICENSE` | Your name |
+| `LICENSE` | MD. SUJAN MIAH |
 
 ### 2 · Your photo and CV
 
@@ -200,7 +200,7 @@ to a flat but perfectly readable layout.
 
 ## Pre-launch checklist
 
-- [ ] Replaced every `YOUR NAME`, `yourdomain.com`, `yourhandle`, `you@yourdomain.com`
+- [ ] Replaced every `MD. SUJAN MIAH`, `yourdomain.com`, `yourhandle`, `you@yourdomain.com`
 - [ ] Added `profile.jpg`, `resume.pdf`, `og-image.png`
 - [ ] Rewrote the timeline, projects and articles with real work
 - [ ] Configured `CONTACT_CONFIG` and sent yourself a test message
